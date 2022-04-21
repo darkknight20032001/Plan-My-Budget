@@ -1,0 +1,5 @@
+const myDatabase = [
+    {
+        cityName: 'Delhi'
+    }
+]
