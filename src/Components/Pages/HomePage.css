@@ -1,0 +1,9 @@
+.Home {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  width: fit-content;
+  margin: auto;
+  grid-gap: 4rem;
+  justify-items: center;
+}

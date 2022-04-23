@@ -1,19 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
-import myDatabase from "./Database/myDatabase";
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import HomePage from "./Components/Pages/HomePage";
+import MainPage from "./Components/Pages/MainPage";
 function App() {
   return (
     <div className="App">
-      {myDatabase.map((listItems) => {
-        return (
-          <>
-            <li>{listItems.cityName}</li>
-            <li>{listItems.gdbPerCapita}</li>
-            <li>{listItems.humanFreedomIndex}</li>
-            <li>{listItems.lifeExpectancy}</li>
-          </>
-        );
-      })}
+    <BrowserRouter>
+      
+<Routes>
+  <Route path="/" element={<HomePage />} />
+  <Route path="/mainPage" element={<MainPage />} />
+</Routes>
+      </BrowserRouter>
     </div>
   );
 }
