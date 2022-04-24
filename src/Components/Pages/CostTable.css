@@ -3,6 +3,9 @@ th,
 td {
   border: 1px solid black;
 }
+td {
+  padding: 4px;
+}
 table {
   width: 24rem;
   text-align: center;
