@@ -11,12 +11,10 @@ const HomePage = () => {
       <div className="Home">
         {myDatabase
           .filter((items) => {
-            if (search == "") {
+            if (search === "") {
               return items;
-            } else if (
-              items.cityName.toLowerCase().includes(search.toLowerCase())
-            ) {
-              return items;
+            } else {
+              return items.cityName.toLowerCase().includes(search.toLowerCase());
             }
           })
           .map((listItems) => {

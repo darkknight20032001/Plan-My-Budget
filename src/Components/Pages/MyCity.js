@@ -9,7 +9,7 @@ const MyCity = ({ cityName }) => {
       className="MyCity"
       onClick={() => navigate("/mainPage", { state: cityName })}
     >
-      <img src={`/assets/images/${cityName.toLowerCase()}.jpg`} />
+      <img src={`/assets/images/${cityName.toLowerCase()}.jpg`} alt={cityName}/>
       <p>{cityName}</p>
     </div>
   );

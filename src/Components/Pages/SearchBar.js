@@ -1,10 +1,11 @@
 import React from "react";
 import "./SearchBar.css";
-import TextField from '@mui/material/TextField';
+import TextField from "@mui/material/TextField";
 const SearchBar = ({ search, setSearch }) => {
   return (
     <div className="Search">
       <TextField
+        style={{ boxShadow: " 5px 6px 5px black", width: "31rem" }}
         id="outlined-basic"
         label="Search"
         variant="outlined"
