@@ -1,24 +1,13 @@
-
-.cityName {
+.compare {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.cityName-details {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
   margin-top: 4rem;
 }
-.cityName-details p {
-  padding: 2px;
-  font-weight: 500;
+.compare h1 {
+  padding: 1rem;
 }
-.Budget-btn {
-  text-align: center;
-  margin-top: 4rem;
-}
-.Budget-btn button {
+.compare-btn button {
   padding: 11px;
   font-size: 1.2rem;
   font-weight: bold;
@@ -28,6 +17,6 @@
   border-radius: 10px;
   transition: all 0.5 ease;
 }
-.Budget-btn button:hover {
+.compare-btn button:hover {
   background: rgb(76, 15, 133);
 }

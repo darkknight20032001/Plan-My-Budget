@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import myDatabase from "../../Database/myDatabase";
+import Compare from "../Compare/Compare";
 import CostTable from "./CostTable";
 import "./MainPage.css";
 import ShortDetails from "./ShortDetails";
@@ -34,6 +35,7 @@ const MainPage = () => {
         </button>
       </div>
       {clicked && <CostTable data={data} />}
+      <Compare />
     </div>
   );
 };

@@ -1,15 +1,6 @@
 import React from "react";
 import "./CostTable.css";
 const CostTable = ({ data }) => {
-  const totalPrice =
-    data.housing +
-    data.food +
-    data.waterSupply +
-    data.electricitySupply +
-    data.transportation +
-    data.internetSupply +
-    data.fuelPrices +
-    data.gasPrices;
   return (
     <div className="Cost-table">
       <table>
@@ -20,43 +11,43 @@ const CostTable = ({ data }) => {
           </tr>
           <tr>
             <td>Housing</td>
-            <td>{data.housing}</td>
+            <td>&#8377;{data.housing}</td>
           </tr>
           <tr>
             <td>Food</td>
-            <td>{data.food}</td>
+            <td>&#8377;{data.food}</td>
           </tr>
           <tr>
             <td>Water Supply</td>
-            <td>{data.waterSupply}</td>
+            <td>&#8377;{data.waterSupply}</td>
           </tr>
           <tr>
             <td>Electricity Supply</td>
-            <td>{data.electricitySupply}</td>
+            <td>&#8377;{data.electricitySupply}</td>
           </tr>
           <tr>
             <td>Transportation</td>
-            <td>{data.transportation}</td>
+            <td>&#8377;{data.transportation}</td>
           </tr>
           <tr>
             <td>Internet Supply</td>
-            <td>{data.internetSupply}</td>
+            <td>&#8377;{data.internetSupply}</td>
           </tr>
           <tr>
             <td>Fuel Prices</td>
-            <td>{data.fuelPrices}</td>
+            <td>&#8377;{data.fuelPrices}</td>
           </tr>
           <tr>
             <td>Gas Prices</td>
-            <td>{data.gasPrices}</td>
+            <td>&#8377;{data.gasPrices}</td>
           </tr>
         </tbody>
       </table>
       <table className="Total-cost">
         <tbody>
           <tr>
-            <th>Total Cost of Living</th>
-            <th>{totalPrice}</th>
+            <th>Overall cost of living for one person</th>
+            <th>&#8377;{data.totalCost}</th>
           </tr>
         </tbody>
       </table>
