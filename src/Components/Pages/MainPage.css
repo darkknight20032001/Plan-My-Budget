@@ -5,6 +5,9 @@
 }
 .cityName h1 {
   font-family: "Lora", serif;
+color: black;
+text-shadow: 0px 0px 10px darkblue;
+  
 }
 .cityName-details {
   display: flex;
