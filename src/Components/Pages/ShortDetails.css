@@ -7,4 +7,15 @@
   height: 176px;
   border-radius: 50%;
   text-align: center;
+  animation: rotate 3s ease;
+}
+@keyframes rotate {
+  from {
+    opacity: 10%;
+    transform: rotateZ(0deg) scale(0);
+  }
+  to {
+    opacity: 100%;
+    transform: rotateZ(360deg) scale(1);
+  }
 }

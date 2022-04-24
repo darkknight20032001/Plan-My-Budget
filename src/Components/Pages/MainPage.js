@@ -15,7 +15,7 @@ const MainPage = () => {
   return (
     <div>
       <div className="cityName">
-        <h1>{data.cityName}</h1>
+        <h1>WELCOME TO {data.cityName.toUpperCase()}</h1>
         <div className="cityName-details">
           <ShortDetails detail="gdpPerCapita" count={data.gdbPerCapita} />
           <ShortDetails

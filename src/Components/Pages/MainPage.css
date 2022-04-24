@@ -1,8 +1,10 @@
-
 .cityName {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.cityName h1 {
+  font-family: "Lora", serif;
 }
 .cityName-details {
   display: flex;

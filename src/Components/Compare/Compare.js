@@ -46,11 +46,12 @@ const Compare = () => {
           <div className="message">
             {data2.totalCost - data1.totalCost > 0 ? (
               <p>
-                You have to earn
-                {Math.floor(
-                  (data2.totalCost - data1.totalCost) / data1.totalCost
-                ) * 100}
-                %
+                You have to earn{" "}
+                {(
+                  ((data2.totalCost - data1.totalCost) / data1.totalCost) *
+                  100
+                ).toFixed(2)}
+                % more to move to {data2.cityName}
               </p>
             ) : (
               <p>Your budget is alright to live in {data2.cityName}</p>
