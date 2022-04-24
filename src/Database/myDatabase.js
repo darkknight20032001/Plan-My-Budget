@@ -106,7 +106,7 @@ const myDatabase = [
   },
   {
     id: 8,
-    cityName: "Chandigarh",
+    cityName: "Lucknow",
     housing: 500,
     food: 100,
     waterSupply: 300,
@@ -136,7 +136,7 @@ const myDatabase = [
   },
   {
     id: 10,
-    cityName: "Bhubaneswar",
+    cityName: "Jaipur",
     housing: 500,
     food: 100,
     waterSupply: 300,

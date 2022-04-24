@@ -1,0 +1,17 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+table {
+  width: 24rem;
+  text-align: center;
+}
+.Cost-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Total-cost {
+  margin-top: 0.5rem;
+}
