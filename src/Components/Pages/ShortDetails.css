@@ -1,0 +1,8 @@
+.Short-details {
+  border: 2px solid red;
+  padding: 7px 7px;
+  width: 180px;
+  height: 176px;
+  border-radius: 50%;
+  text-align: center;
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import myDatabase from "../../Database/myDatabase";
 import "./MainPage.css";
+import ShortDetails from "./ShortDetails";
 const MainPage = () => {
   const [clicked, setClicked] = useState(false);
   const location = useLocation();
@@ -21,11 +22,16 @@ const MainPage = () => {
     <div>
       <div className="cityName">
         <h1>{data.cityName}</h1>
-        <p>{data.gdbPerCapita}</p>
-        <p>{data.humanFreedomIndex}</p>
-        <p>{data.lifeExpectancy}</p>
+        <div className="cityName-details">
+          <ShortDetails detail="gdpPerCapita" count={data.gdbPerCapita} />
+          <ShortDetails
+            detail="humanFreedomIndex"
+            count={data.humanFreedomIndex}
+          />
+          <ShortDetails detail="lifeExpectancy" count={data.lifeExpectancy} />
+        </div>
       </div>
-      <div>
+      <div className="Budget-btn">
         <button
           onClick={() => {
             setClicked(true);
