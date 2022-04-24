@@ -10,7 +10,7 @@ table {
 .Cost-table {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 .Total-cost {
   margin-top: 0.5rem;
