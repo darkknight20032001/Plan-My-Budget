@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./CostTable.css";
 const CostTable = ({ data }) => {
   const totalPrice =
     data.housing +
