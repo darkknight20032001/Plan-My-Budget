@@ -20,3 +20,20 @@
 .compare-btn button:hover {
   background: rgb(76, 15, 133);
 }
+.budget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.message p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: green;
+}
+.compare-city {
+  width: 40rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}

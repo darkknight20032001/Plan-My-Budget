@@ -32,17 +32,30 @@ const Compare = () => {
         <button onClick={onCompare}> Compare </button>{" "}
       </div>{" "}
       {data1 && data2 && compare && (
-        <div>
-          <div>
+        <div className="budget">
+          <div className="compare-city">
             <p>
               Total cost of {data1.cityName} -{" "}
-              <strong>{data1.totalCost}</strong>{" "}
+              <strong>&#8377;{data1.totalCost}</strong>{" "}
             </p>{" "}
             <p>
               Total cost of {data2.cityName} -{" "}
-              <strong>{data2.totalCost}</strong>
+              <strong>&#8377;{data2.totalCost}</strong>
             </p>{" "}
           </div>{" "}
+          <div className="message">
+            {data2.totalCost - data1.totalCost > 0 ? (
+              <p>
+                You have to earn
+                {Math.floor(
+                  (data2.totalCost - data1.totalCost) / data1.totalCost
+                ) * 100}
+                %
+              </p>
+            ) : (
+              <p>Your budget is alright to live in {data2.cityName}</p>
+            )}
+          </div>
         </div>
       )}{" "}
     </div>

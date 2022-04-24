@@ -31,7 +31,7 @@ const MainPage = () => {
             setClicked(true);
           }}
         >
-          Budget design for me
+          Click to get budget of {data.cityName}
         </button>
       </div>
       {clicked && <CostTable data={data} />}
